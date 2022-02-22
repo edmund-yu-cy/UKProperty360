@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Property360App: App {
+    @StateObject var model = Property360ViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(model)
         }
     }
 }

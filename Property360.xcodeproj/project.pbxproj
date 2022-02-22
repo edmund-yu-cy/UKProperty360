@@ -7,20 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2E32FC27C32DEF00BE087E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E32FB27C32DEF00BE087E /* SearchView.swift */; };
+		2EA2891B27BBA06F006B8DC4 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891A27BBA06F006B8DC4 /* Property.swift */; };
+		2EA2891D27BBA1EF006B8DC4 /* NearbySchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891C27BBA1EF006B8DC4 /* NearbySchool.swift */; };
+		2EA2891F27BBA207006B8DC4 /* PropertyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891E27BBA207006B8DC4 /* PropertyImage.swift */; };
+		2EA2892127BBA213006B8DC4 /* NearbyPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892027BBA213006B8DC4 /* NearbyPlace.swift */; };
+		2EA2892327BBA222006B8DC4 /* NearbyCrimesCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */; };
+		2EA2892527BBA36E006B8DC4 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892427BBA36D006B8DC4 /* School.swift */; };
+		2EA2892727BBA393006B8DC4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892627BBA393006B8DC4 /* Place.swift */; };
 		2EDD488127BB9394001CBE1C /* Property360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD488027BB9394001CBE1C /* Property360App.swift */; };
 		2EDD488327BB9394001CBE1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD488227BB9394001CBE1C /* ContentView.swift */; };
 		2EDD488527BB9396001CBE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD488427BB9396001CBE1C /* Assets.xcassets */; };
 		2EDD488827BB9396001CBE1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD488727BB9396001CBE1C /* Preview Assets.xcassets */; };
+		2EFEEA0627BCCA0600F44DC1 /* Property360ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */; };
 		CE4953DED41D5730FB751F1D /* Pods_Property360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DAE1092BE141689A9D585A /* Pods_Property360.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26DAE1092BE141689A9D585A /* Pods_Property360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Property360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2E32FB27C32DEF00BE087E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		2EA2891A27BBA06F006B8DC4 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		2EA2891C27BBA1EF006B8DC4 /* NearbySchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbySchool.swift; sourceTree = "<group>"; };
+		2EA2891E27BBA207006B8DC4 /* PropertyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImage.swift; sourceTree = "<group>"; };
+		2EA2892027BBA213006B8DC4 /* NearbyPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlace.swift; sourceTree = "<group>"; };
+		2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCrimesCount.swift; sourceTree = "<group>"; };
+		2EA2892427BBA36D006B8DC4 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		2EA2892627BBA393006B8DC4 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		2EDD487D27BB9394001CBE1C /* Property360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Property360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDD488027BB9394001CBE1C /* Property360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property360App.swift; sourceTree = "<group>"; };
 		2EDD488227BB9394001CBE1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2EDD488427BB9396001CBE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDD488727BB9396001CBE1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property360ViewModel.swift; sourceTree = "<group>"; };
 		3A03EFC63A8DB975D053F54F /* Pods-Property360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Property360.debug.xcconfig"; path = "Target Support Files/Pods-Property360/Pods-Property360.debug.xcconfig"; sourceTree = "<group>"; };
 		B9C06649E22C4CA4FF8763E6 /* Pods-Property360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Property360.release.xcconfig"; path = "Target Support Files/Pods-Property360/Pods-Property360.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +55,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EA2891727BB9F25006B8DC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2EA2891827BB9F39006B8DC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E2E32FB27C32DEF00BE087E /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2EA2891927BB9F40006B8DC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2891A27BBA06F006B8DC4 /* Property.swift */,
+				2EA2891C27BBA1EF006B8DC4 /* NearbySchool.swift */,
+				2EA2891E27BBA207006B8DC4 /* PropertyImage.swift */,
+				2EA2892027BBA213006B8DC4 /* NearbyPlace.swift */,
+				2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */,
+				2EA2892427BBA36D006B8DC4 /* School.swift */,
+				2EA2892627BBA393006B8DC4 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2EDD487427BB9394001CBE1C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +106,9 @@
 		2EDD487F27BB9394001CBE1C /* Property360 */ = {
 			isa = PBXGroup;
 			children = (
+				2EA2891927BB9F40006B8DC4 /* Model */,
+				2EA2891827BB9F39006B8DC4 /* View */,
+				2EA2891727BB9F25006B8DC4 /* ViewModel */,
 				2EDD488027BB9394001CBE1C /* Property360App.swift */,
 				2EDD488227BB9394001CBE1C /* ContentView.swift */,
 				2EDD488427BB9396001CBE1C /* Assets.xcassets */,
@@ -88,7 +139,6 @@
 				3A03EFC63A8DB975D053F54F /* Pods-Property360.debug.xcconfig */,
 				B9C06649E22C4CA4FF8763E6 /* Pods-Property360.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA2891B27BBA06F006B8DC4 /* Property.swift in Sources */,
 				2EDD488327BB9394001CBE1C /* ContentView.swift in Sources */,
+				2EA2892127BBA213006B8DC4 /* NearbyPlace.swift in Sources */,
+				2EA2891D27BBA1EF006B8DC4 /* NearbySchool.swift in Sources */,
+				2EA2892327BBA222006B8DC4 /* NearbyCrimesCount.swift in Sources */,
 				2EDD488127BB9394001CBE1C /* Property360App.swift in Sources */,
+				2EA2892727BBA393006B8DC4 /* Place.swift in Sources */,
+				2EA2891F27BBA207006B8DC4 /* PropertyImage.swift in Sources */,
+				2EA2892527BBA36E006B8DC4 /* School.swift in Sources */,
+				2EFEEA0627BCCA0600F44DC1 /* Property360ViewModel.swift in Sources */,
+				2E2E32FC27C32DEF00BE087E /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
