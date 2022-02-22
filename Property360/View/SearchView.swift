@@ -14,7 +14,7 @@ struct SearchView: View {
             Spacer()
             
             TextField(text: $location, label: {
-                Text("Property Location")
+                Text("Property Location1")
             }).padding()
             
             Spacer()
