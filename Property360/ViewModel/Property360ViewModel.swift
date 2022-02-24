@@ -48,6 +48,19 @@ class Property360ViewModel: ObservableObject {
     @Published var nearbyParks: [PoiViewModel] = []
     @Published var nearbyCrimeCounts: [CrimeCountViewModel] = []
     
+    let dao = ApplicationDao()
+    
+    func secondCall() {
+        dao.getProperty(key: 185, completion: { response in
+            switch response {
+            case .success(let property):
+                print(property.summary)
+            case .failure(let error):
+                print(error)
+            }
+        })
+    }
+    
     func firstCall() {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601

@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct SearchView: View {
+    @EnvironmentObject private var model: Property360ViewModel
     @State var location: String = ""
+    
     var body: some View {
         VStack {
             Spacer()
             
             TextField(text: $location, label: {
-                Text("Property Location12")
+                Text("Property Location")
+            }).padding()
+            
+            Button(action: {
+                model.secondCall()
+            }, label: {
+                Text("Call API")
             }).padding()
             
             Spacer()

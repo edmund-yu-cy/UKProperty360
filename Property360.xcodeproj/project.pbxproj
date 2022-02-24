@@ -15,6 +15,8 @@
 		2EA2892327BBA222006B8DC4 /* NearbyCrimesCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */; };
 		2EA2892527BBA36E006B8DC4 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892427BBA36D006B8DC4 /* School.swift */; };
 		2EA2892727BBA393006B8DC4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2892627BBA393006B8DC4 /* Place.swift */; };
+		2EDD30F127C76AAF0069F963 /* ApplicationDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD30F027C76AAF0069F963 /* ApplicationDao.swift */; };
+		2EDD30F327C78B470069F963 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD30F227C78B470069F963 /* City.swift */; };
 		2EDD488127BB9394001CBE1C /* Property360App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD488027BB9394001CBE1C /* Property360App.swift */; };
 		2EDD488327BB9394001CBE1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD488227BB9394001CBE1C /* ContentView.swift */; };
 		2EDD488527BB9396001CBE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD488427BB9396001CBE1C /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 		2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCrimesCount.swift; sourceTree = "<group>"; };
 		2EA2892427BBA36D006B8DC4 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		2EA2892627BBA393006B8DC4 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2EDD30F027C76AAF0069F963 /* ApplicationDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDao.swift; sourceTree = "<group>"; };
+		2EDD30F227C78B470069F963 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		2EDD487D27BB9394001CBE1C /* Property360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Property360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDD488027BB9394001CBE1C /* Property360App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property360App.swift; sourceTree = "<group>"; };
 		2EDD488227BB9394001CBE1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,8 +85,17 @@
 				2EA2892227BBA222006B8DC4 /* NearbyCrimesCount.swift */,
 				2EA2892427BBA36D006B8DC4 /* School.swift */,
 				2EA2892627BBA393006B8DC4 /* Place.swift */,
+				2EDD30F227C78B470069F963 /* City.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2EDD30EF27C76A7C0069F963 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2EDD30F027C76AAF0069F963 /* ApplicationDao.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		2EDD487427BB9394001CBE1C = {
@@ -106,6 +119,7 @@
 		2EDD487F27BB9394001CBE1C /* Property360 */ = {
 			isa = PBXGroup;
 			children = (
+				2EDD30EF27C76A7C0069F963 /* Persistence */,
 				2EA2891927BB9F40006B8DC4 /* Model */,
 				2EA2891827BB9F39006B8DC4 /* View */,
 				2EA2891727BB9F25006B8DC4 /* ViewModel */,
@@ -259,6 +273,7 @@
 				2EA2891B27BBA06F006B8DC4 /* Property.swift in Sources */,
 				2EDD488327BB9394001CBE1C /* ContentView.swift in Sources */,
 				2EA2892127BBA213006B8DC4 /* NearbyPlace.swift in Sources */,
+				2EDD30F127C76AAF0069F963 /* ApplicationDao.swift in Sources */,
 				2EA2891D27BBA1EF006B8DC4 /* NearbySchool.swift in Sources */,
 				2EA2892327BBA222006B8DC4 /* NearbyCrimesCount.swift in Sources */,
 				2EDD488127BB9394001CBE1C /* Property360App.swift in Sources */,
@@ -266,6 +281,7 @@
 				2EA2891F27BBA207006B8DC4 /* PropertyImage.swift in Sources */,
 				2EA2892527BBA36E006B8DC4 /* School.swift in Sources */,
 				2EFEEA0627BCCA0600F44DC1 /* Property360ViewModel.swift in Sources */,
+				2EDD30F327C78B470069F963 /* City.swift in Sources */,
 				2E2E32FC27C32DEF00BE087E /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -125,7 +125,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            model.firstCall()
+            model.secondCall()
         }
     }
 }
