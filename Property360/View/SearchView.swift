@@ -20,7 +20,7 @@ struct SearchView: View {
             }).padding()
             
             Button(action: {
-                model.secondCall()
+                //model.secondCall()
             }, label: {
                 Text("Call API")
             }).padding()

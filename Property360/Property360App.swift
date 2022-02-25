@@ -12,7 +12,7 @@ struct Property360App: App {
     @StateObject var model = Property360ViewModel()
     var body: some Scene {
         WindowGroup {
-            SearchView().environmentObject(model)
+            PropertyView().environmentObject(model)
         }
     }
 }
