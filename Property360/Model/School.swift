@@ -21,7 +21,7 @@ struct School: Decodable {
     let ratingBody: String
     let ratingLabel: String
     let ratingValue: String
-    let inspectionReportUrl: String
+    let inspectionReportUrl: String?
     let unit: String
     let latitude: Double
     let longitude: Double

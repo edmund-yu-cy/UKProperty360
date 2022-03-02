@@ -7,11 +7,15 @@
 
 import Foundation
 
-struct Property: Decodable {
+struct Property: Decodable, Hashable {
+    static func == (lhs: Property, rhs: Property) -> Bool {
+        lhs.key == rhs.key
+    }
+    
     let key: Int
     let externalKey: Int
     let bedrooms: Int
-    let bathrooms: Int
+    let bathrooms: Int?
     let floorPlans: Int
     let summary: String
     let address: String?
@@ -32,6 +36,9 @@ struct Property: Decodable {
     let nearbyCrimesCounts: [NearbyCrimesCount]
     let images: [PropertyImage]
 
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(key)
+    }
     /**
 
      */

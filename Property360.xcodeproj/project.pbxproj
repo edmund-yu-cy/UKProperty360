@@ -11,6 +11,8 @@
 		2E6654C227C88D2000CFF701 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6654C127C88D2000CFF701 /* SearchViewModel.swift */; };
 		2E6654C427C88D8900CFF701 /* PropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6654C327C88D8900CFF701 /* PropertyViewModel.swift */; };
 		2E6654C627C88D9F00CFF701 /* PropertyListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6654C527C88D9F00CFF701 /* PropertyListingViewModel.swift */; };
+		2E6654C827C8B90E00CFF701 /* PropertyListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6654C727C8B90E00CFF701 /* PropertyListingView.swift */; };
+		2E6654CA27C8C3E100CFF701 /* FontSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6654C927C8C3E100CFF701 /* FontSizeView.swift */; };
 		2EA2891B27BBA06F006B8DC4 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891A27BBA06F006B8DC4 /* Property.swift */; };
 		2EA2891D27BBA1EF006B8DC4 /* NearbySchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891C27BBA1EF006B8DC4 /* NearbySchool.swift */; };
 		2EA2891F27BBA207006B8DC4 /* PropertyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2891E27BBA207006B8DC4 /* PropertyImage.swift */; };
@@ -24,7 +26,7 @@
 		2EDD488327BB9394001CBE1C /* PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDD488227BB9394001CBE1C /* PropertyView.swift */; };
 		2EDD488527BB9396001CBE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD488427BB9396001CBE1C /* Assets.xcassets */; };
 		2EDD488827BB9396001CBE1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD488727BB9396001CBE1C /* Preview Assets.xcassets */; };
-		2EFEEA0627BCCA0600F44DC1 /* Property360ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */; };
+		2EFEEA0627BCCA0600F44DC1 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFEEA0527BCCA0600F44DC1 /* ApplicationViewModel.swift */; };
 		CE4953DED41D5730FB751F1D /* Pods_Property360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DAE1092BE141689A9D585A /* Pods_Property360.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		2E6654C127C88D2000CFF701 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2E6654C327C88D8900CFF701 /* PropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewModel.swift; sourceTree = "<group>"; };
 		2E6654C527C88D9F00CFF701 /* PropertyListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListingViewModel.swift; sourceTree = "<group>"; };
+		2E6654C727C8B90E00CFF701 /* PropertyListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListingView.swift; sourceTree = "<group>"; };
+		2E6654C927C8C3E100CFF701 /* FontSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeView.swift; sourceTree = "<group>"; };
 		2EA2891A27BBA06F006B8DC4 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		2EA2891C27BBA1EF006B8DC4 /* NearbySchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbySchool.swift; sourceTree = "<group>"; };
 		2EA2891E27BBA207006B8DC4 /* PropertyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyImage.swift; sourceTree = "<group>"; };
@@ -48,7 +52,7 @@
 		2EDD488227BB9394001CBE1C /* PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyView.swift; sourceTree = "<group>"; };
 		2EDD488427BB9396001CBE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDD488727BB9396001CBE1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property360ViewModel.swift; sourceTree = "<group>"; };
+		2EFEEA0527BCCA0600F44DC1 /* ApplicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
 		3A03EFC63A8DB975D053F54F /* Pods-Property360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Property360.debug.xcconfig"; path = "Target Support Files/Pods-Property360/Pods-Property360.debug.xcconfig"; sourceTree = "<group>"; };
 		B9C06649E22C4CA4FF8763E6 /* Pods-Property360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Property360.release.xcconfig"; path = "Target Support Files/Pods-Property360/Pods-Property360.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +72,7 @@
 		2EA2891727BB9F25006B8DC4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2EFEEA0527BCCA0600F44DC1 /* Property360ViewModel.swift */,
+				2EFEEA0527BCCA0600F44DC1 /* ApplicationViewModel.swift */,
 				2E6654C127C88D2000CFF701 /* SearchViewModel.swift */,
 				2E6654C327C88D8900CFF701 /* PropertyViewModel.swift */,
 				2E6654C527C88D9F00CFF701 /* PropertyListingViewModel.swift */,
@@ -81,6 +85,8 @@
 			children = (
 				2EDD488227BB9394001CBE1C /* PropertyView.swift */,
 				2E2E32FB27C32DEF00BE087E /* SearchView.swift */,
+				2E6654C727C8B90E00CFF701 /* PropertyListingView.swift */,
+				2E6654C927C8C3E100CFF701 /* FontSizeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,10 +295,12 @@
 				2EDD488127BB9394001CBE1C /* Property360App.swift in Sources */,
 				2E6654C427C88D8900CFF701 /* PropertyViewModel.swift in Sources */,
 				2EA2892727BBA393006B8DC4 /* Place.swift in Sources */,
+				2E6654CA27C8C3E100CFF701 /* FontSizeView.swift in Sources */,
 				2E6654C227C88D2000CFF701 /* SearchViewModel.swift in Sources */,
 				2EA2891F27BBA207006B8DC4 /* PropertyImage.swift in Sources */,
 				2EA2892527BBA36E006B8DC4 /* School.swift in Sources */,
-				2EFEEA0627BCCA0600F44DC1 /* Property360ViewModel.swift in Sources */,
+				2E6654C827C8B90E00CFF701 /* PropertyListingView.swift in Sources */,
+				2EFEEA0627BCCA0600F44DC1 /* ApplicationViewModel.swift in Sources */,
 				2EDD30F327C78B470069F963 /* City.swift in Sources */,
 				2E2E32FC27C32DEF00BE087E /* SearchView.swift in Sources */,
 			);

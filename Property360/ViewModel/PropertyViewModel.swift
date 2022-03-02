@@ -22,27 +22,27 @@ struct PoiViewModel: Hashable {
 struct CrimeCountViewModel: Hashable {
     var type: StringLiteralType
     var count: Int
-    var colour: Color = .black
+    var colour: Color = .primary
 }
 
-class PropertyViewModel: ObservableObject {
-    @Published var description: String = ""
-    @Published var bedrooms: Int = 0
-    @Published var bathrooms: Int = 0
-    @Published var firstImageUrl: String = ""
-    @Published var address: String = ""
-    @Published var subType: String = ""
-    @Published var price: Int = 0
-    @Published var imagesUrls: [String] = []
-    @Published var outstandingRatingCounts = 0
-    @Published var goodRatingCounts = 0;
-    @Published var reqImprovementCounts = 0;
-    @Published var nearbySchools: [SchoolViewModel] = []
-    @Published var supermarketCounts = 0;
-    @Published var trainStationCounts = 0;
-    @Published var parkCounts = 0;
-    @Published var nearbySupermarkets: [PoiViewModel] = []
-    @Published var nearbyTrainStations: [PoiViewModel] = []
-    @Published var nearbyParks: [PoiViewModel] = []
-    @Published var nearbyCrimeCounts: [CrimeCountViewModel] = []
+struct PropertyViewModel {
+    var description: String = ""
+    var bedrooms: Int = 0
+    var bathrooms: Int = 0
+    var firstImageUrl: String = ""
+    var address: String = ""
+    var subType: String = ""
+    var price: Int = 0
+    var imagesUrls: [String] = []
+    var outstandingRatingCounts = 0
+    var goodRatingCounts = 0;
+    var reqImprovementCounts = 0;
+    var nearbySchools: [SchoolViewModel] = []
+    var supermarketCounts = 0;
+    var trainStationCounts = 0;
+    var parkCounts = 0;
+    var nearbySupermarkets: [PoiViewModel] = []
+    var nearbyTrainStations: [PoiViewModel] = []
+    var nearbyParks: [PoiViewModel] = []
+    var nearbyCrimeCounts: [CrimeCountViewModel] = []
 }

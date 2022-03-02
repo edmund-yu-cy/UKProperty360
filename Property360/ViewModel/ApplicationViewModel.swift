@@ -9,38 +9,69 @@ import Foundation
 import Alamofire
 import SwiftUI
 
-class Property360ViewModel: ObservableObject {
+class ApplicationViewModel: ObservableObject {
     
     @Published var searchViewModel = SearchViewModel()
     @Published var propertyViewModel = PropertyViewModel()
     @Published var propertyListingViewModel = PropertyListingViewModel()
     @Published var propertyNotFound = false
     @Published var fetchingProperty = false
+    @Published var showPropertyListing = false
+    @Published var showPropertyDetails = false
 
     let dao = ApplicationDao()
     
-    func firstCall() {
+//    func firstCall() {
+//        fetchingProperty = true
+//        dao.getProperty(key: 185, completion: { [self] result in
+//            switch result {
+//            case .failure(let error):
+//                propertyNotFound = true
+//                fetchingProperty = false
+//            case .success(let property):
+//                print("success")
+//                propertyViewModel = populateProperty(property: property)
+//                fetchingProperty = false
+//            }
+//        })
+//    }
+    
+    func onPropertyTapped(property: Property) {
+        propertyViewModel = populateProperty(property: property)
+        showPropertyDetails = true
+    }
+
+    func searchProperties() {
+        print("Location: \(searchViewModel.location)")
+        print("Radius: \(searchViewModel.radius.value)")
+        print("Min Price: \(searchViewModel.minPrice.value)")
+        print("Max Price: \(searchViewModel.maxPrice.value)")
+        
+        searchCall()
+    }
+    
+    func searchCall() {
         fetchingProperty = true
-        dao.getProperty(key: 185, completion: { [self] result in
-            switch result {
+        dao.listProperties(cityKey: 60, radius: 4, completion: { [self] response in
+            fetchingProperty = false
+            switch response {
             case .failure(let error):
-                propertyNotFound = true
-                fetchingProperty = false
-            case .success(let property):
-                print("success")
-                propertyViewModel = populateProperty(property: property)
-                fetchingProperty = false
+                print(error)
+            case .success(let properties):
+                let listingsViewModel = PropertyListingViewModel()
+                listingsViewModel.properties = properties
+                propertyListingViewModel = listingsViewModel
+                showPropertyListing = true
             }
         })
-
     }
     
     func populateProperty(property: Property) -> PropertyViewModel {
-        let viewModel = PropertyViewModel()
+        var viewModel = PropertyViewModel()
         viewModel.description = property.summary
         viewModel.bedrooms = property.bedrooms
-        viewModel.bathrooms = property.bathrooms
-        viewModel.firstImageUrl = property.images[0].sourceUrl
+        viewModel.bathrooms = property.bathrooms ?? 0
+        viewModel.firstImageUrl = property.images.count == 0 ? "" : property.images[0].sourceUrl
         viewModel.imagesUrls = property.images.map { $0.sourceUrl }
         viewModel.address = property.address!
         viewModel.subType = property.subType!

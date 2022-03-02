@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct Property360App: App {
-    @StateObject var model = Property360ViewModel()
+    @StateObject var model = ApplicationViewModel()
     var body: some Scene {
         WindowGroup {
-            PropertyView().environmentObject(model)
+            SearchView().environmentObject(model)
         }
     }
 }

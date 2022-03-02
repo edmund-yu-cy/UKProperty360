@@ -34,6 +34,10 @@ class ApplicationDao {
         
     }
     
+    func getCity(name: String, completion: @escaping(Result<City, Error>) -> Void) {
+        
+    }
+    
     func listCities(name: String, completion: @escaping (Result<[City], Error>) -> Void) {
         let parameters: Parameters = [
             "name" : name
@@ -59,7 +63,7 @@ class ApplicationDao {
         
         AF.request(apiUrl + "/properties", method: .get, parameters: parameters)
             .validate(statusCode: 200..<300)
-            .responseDecodable { (response: AFDataResponse<[Property]>) in
+            .responseDecodable(decoder: decoder) { (response: AFDataResponse<[Property]>) in
                 switch response.result {
                 case .success(let properties):
                     completion(.success(properties))
